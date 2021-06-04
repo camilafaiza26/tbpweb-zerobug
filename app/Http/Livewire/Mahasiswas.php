@@ -85,7 +85,6 @@ class Mahasiswas extends Component
         $this->nama = $mahasiswa->name;
         $this->nim = $mahasiswa->nim;
          $this->email = $mahasiswa->email;
-         $this->password = $mahasiswa->password;
 
         $this->showModal();
 

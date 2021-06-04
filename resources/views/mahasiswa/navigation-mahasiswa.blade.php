@@ -6,18 +6,16 @@
           <div class="flex justify-between h-16">
               <div class="flex">
                   <!-- Logo -->
-                  <div class="flex-shrink-0 flex items-center">
-                      <a href="{{ route('dashboard') }}">
-                          <x-jet-application-mark class="block h-9 w-auto" />
-                      </a>
+                  <div class="mt-4 flex-shrink-0 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="188" height="39" class="mx-auto sm:mx-0"><text
+                        transform="translate(87 29)" fill="#454f5b">
+                        <tspan x="0" y="0">ZeroBug</tspan>
+                      </text>
+                      <path d="M54 39H0L27 6l27 33zM23 22v11h8V22h-8z" fill="#4ad5f6" />
+                      <path d="M54 0L40 16h27L54 0" fill="#95cdb1" />
+                      <path d="M69 18L55 34h27L69 18" fill="#ffc48b" /></svg>
                   </div>
   
-                  <!-- Navigation Links -->
-                  <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                      <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                          {{ __('Dashboard') }}
-                      </x-jet-nav-link>
-                  </div>
               </div>
   
               <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -72,7 +70,7 @@
                   @endif
   
                   <!-- Settings Dropdown -->
-                  <div class="ml-3 relative">
+                  <div class="ml-3 relative mt-4">
                       <x-jet-dropdown align="right" width="48">
                           <x-slot name="trigger">
                               @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())

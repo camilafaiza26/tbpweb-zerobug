@@ -44,7 +44,7 @@
         <div class="hidden sm:flex">
           <ul class="flex flex-col sm:flex-row">
             <li><a href="#" class="sm:px-4 py-2 sm:hidden lg:block">About Us</a></li>
-            @if (Route::has('login'))
+            @if (Route::has('login')|| Route::has('admin.login'))
                 @auth
                     <li><a href="{{ url('/mahasiswa') }}" class="sm:px-4 py-2 block text-blue-600 border border-gray-400 rounded-lg ml-4">Login</a></li>
                 @else

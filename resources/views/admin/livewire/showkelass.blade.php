@@ -95,8 +95,8 @@
     </div>
     @if(session()->has('info'))
     <br>
-    <div
-                 class=" flex items-center bg-green-100 rounded-xl overflow-hidden p-2 space-x-1 mr-4"
+    <div class="px-4">
+    <div class=" flex items-center bg-green-100 rounded-xl overflow-hidden p-2 space-x-1 mr-4"
                >
                <div class="flex items-baseline px-4">
                  <span class="bg-green-300 bg-opacity-50 rounded-full p-1">

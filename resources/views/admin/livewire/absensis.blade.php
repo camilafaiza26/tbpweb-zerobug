@@ -122,7 +122,7 @@
                                  }
                                  @endphp
                                  <td class="text-center">{{ ++$i }}</td>
-                                 <td>{{ $absensi->nim }}</td>
+                                 <td>{{ $absensi->id }}</td>
                                  <td>{{ $absensi->nama }}</td>
                                  <td>{{ $absensi->email }}</td>
                                  <td class="text-center">{{ $absensi->jam_masuk }}</td>

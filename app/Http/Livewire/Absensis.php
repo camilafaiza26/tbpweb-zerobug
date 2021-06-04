@@ -49,7 +49,7 @@ class Absensis extends Component
             'mahasiswas' => User::join('kelas_mahasiswa','users.id','=','kelas_mahasiswa.mahasiswa_id')->where('kelas_id',$this->kelas->id)->get(),
             'absensis'=> User::join('kelas_mahasiswa','users.id','=','kelas_mahasiswa.mahasiswa_id')
             ->where('kelas_mahasiswa.kelas_id',$this->kelas->id)
-            ->leftjoin('kelas_mahasiswa_pertemuan','kelas_mahasiswa_pertemuan.kelas_mahasiswa_id','=','kelas_mahasiswa.id')            
+            ->leftjoin('kelas_mahasiswa_pertemuan','kelas_mahasiswa_pertemuan.kelas_mahasiswa_id','=','kelas_mahasiswa.id')       
             ->leftjoin('pertemuan','kelas_mahasiswa_pertemuan.pertemuan_id','=','pertemuan.id')
             ->where('name','like', $searchParams)->orderBy($this->sortBy, $this->sortDesc)->paginate(15)
 
